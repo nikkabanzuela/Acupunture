@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.border-bottom-primary {
+  border-bottom: 20px solid #e85d64;
+}
+
+.banner {
+  background-image: url("/img/banner.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+}
+
+.bg--primary {
+  background-color: #e85d64;
+}
+
+.text--primary {
+  color: #e85d64;
+}
+
+.bg--gray {
+  background-color: #3d4045;
+}
+
+.text--gray {
+  color: #3d4045;
+}
+
+.bg--black {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.text--black {
+  color: rgba(0, 0, 0, 0);
+}
+
+.bg--white {
+  background-color: #f2f2f2;
+}
+
+.text--white {
+  color: #f2f2f2;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--justify {
+  text-align: justify;
+}
+
+.justify--start {
+  justify-content: flex-start;
+}
+
+.justify--center {
+  justify-content: center;
+}
+
+.justify--end {
+  justify-content: flex-end;
+}
+
+.justify--between {
+  justify-content: space-between;
+}
+
+.justify--around {
+  justify-content: space-around;
+}
+
+.d--flex {
+  display: flex;
+}
+
+.d--grid {
+  display: grid;
+}
+
+.d--block {
+  display: block;
+}
+
+.d--inline-block {
+  display: inline-block;
+}
+
+.d--inline {
+  display: inline;
+}
+
+.align--start {
+  align-items: flex-start;
+}
+
+.align--center {
+  align-items: center;
+}
+
+.align--end {
+  align-items: flex-end;
+}/*# sourceMappingURL=main.min.css.map */
