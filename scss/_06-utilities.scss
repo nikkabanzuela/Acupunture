@@ -19,6 +19,10 @@ $colors:(
             color: $val;
         }
     }
+    .btn.bg--#{$key}
+    {
+        @include btn($val);
+    }
 }
 
 $align: (
@@ -70,3 +74,8 @@ $alignments: (
     }
   }
 }
+@for $i from 1 through 10 {
+    .mb--#{$i} {
+      margin-bottom: $i + rem;
+    }
+  }

@@ -2,9 +2,198 @@
 {
     border-bottom: 20px solid $clr-primary;
 }
-.banner
+.border-top-primary
 {
+    border-top: 20px solid $clr-primary;
+}
+.banner
+{ 
+    padding: 6rem 0;
     background-image: url("/img/banner.jpg");
     height: 80vh;
     background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: gray;
+    background-blend-mode: multiply;
+    color: $clr-white;
+    hr
+    {
+        width: 30%;
+        margin: 2rem auto;
+
+    }
+    h2 
+    {
+        font-size:  clamp(2rem, 3vw, 3rem);
+    }
+    h3 
+    {
+        font-size: clamp(1.5rem,2vw,2rem);
+    }
+
+ }
+ .services
+ { 
+    padding: 6rem 0;
+    color: $clr-gray;
+    &__wrapper {
+        @include grid(3,2rem);
+        @include mediaQuery()
+        {
+            @include grid(1, 2rem);
+        }
+    }
+    h2,p
+    {
+        margin-bottom: 3rem;
+    }
+ }
+.claim
+{
+    background-color: #202020;
+    border-top: 20px solid $clr-primary;
+    padding: 6rem 0;
+    color: $clr-white;
+    height: 5vh;
+    text-align: center;
+    a 
+    {
+        margin-top: 2rem;
+    }
+   
 }
+.about {
+    padding: 6rem 0;
+    &__wrapper {
+        gap: 3rem;
+    }
+}
+.about2 {
+    padding: 6rem 0;
+    &__wrapper {
+        gap: 3rem;
+    }
+    background-color: #f9f9f9;
+}
+
+.slider
+{
+    padding: 6rem 0;
+    text-align: center;
+   
+    hr
+    {
+        width: 30%;
+        margin: 2rem auto;
+    }
+    .tns-nav
+    {
+        text-align: center;
+        margin: 5rem;
+    }
+    .tns-nav button
+    {
+        height: 20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+        margin: 0 4px;
+    
+    }
+    .tns-nav .tns-nav-active
+    {
+        background-color: $clr-primary;
+    }
+    .tns-controls
+     {
+     position: relative;
+    }
+    .tns-controls button:first-child
+    {
+        position: absolute;
+        top: 10rem;
+        background: none;
+        border: none;
+        z-index: 1;
+        font-size: 2rem;
+    
+    }
+    .tns-controls button:last-child
+    {
+        position: absolute;
+        right: 0;
+        top: 10rem;
+        background: none;
+        border: none;
+        z-index: 1;
+        font-size: 2rem;
+    
+    }
+    &__wrapper 
+    {
+    @include grid(3,2rem);
+    }
+}
+ .question
+ {
+    padding: 6rem 0;
+    margin-bottom: 3rem;
+    background-color: #FAF9F6;
+    h1
+    {
+      margin-bottom: 2rem;
+    } 
+    p
+    {
+      margin:0 auto;
+    };
+    h3{
+        color: $clr-primary;
+
+    }
+
+ }
+    
+ .maps 
+ {
+    padding: 6rem 0;
+    &__wrapper {
+        gap: 3rem;
+    }
+    hr {
+        border-top: 1px solid $clr-primary;
+
+    }
+    img {
+        width: 1200px;
+    }
+    background-color:#202020;
+    p {
+        color: $clr-white;
+    }
+}
+
+.footer{
+    padding: 6rem 0;
+    background-color: $clr-primary;
+    color: $clr-white;
+    height: 8vh;
+    &__wrapper {
+        ul {
+           gap: 2rem;
+        }
+        a{
+            border-right: solid 2px $clr-white;
+            padding-right: 3rem;
+            color: $clr-white;
+            text-align: center;
+        }
+    
+
+    }
+    
+}
+
+

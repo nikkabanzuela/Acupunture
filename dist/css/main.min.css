@@ -25,10 +25,174 @@ a {
   border-bottom: 20px solid #e85d64;
 }
 
+.border-top-primary {
+  border-top: 20px solid #e85d64;
+}
+
 .banner {
+  padding: 6rem 0;
   background-image: url("/img/banner.jpg");
   height: 80vh;
   background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-color: gray;
+  background-blend-mode: multiply;
+  color: #f2f2f2;
+}
+.banner hr {
+  width: 30%;
+  margin: 2rem auto;
+}
+.banner h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+.banner h3 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.services {
+  padding: 6rem 0;
+  color: #3d4045;
+}
+.services__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+@media screen and (max-width: 48rem) {
+  .services__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+}
+.services h2, .services p {
+  margin-bottom: 3rem;
+}
+
+.claim {
+  background-color: #202020;
+  border-top: 20px solid #e85d64;
+  padding: 6rem 0;
+  color: #f2f2f2;
+  height: 5vh;
+  text-align: center;
+}
+.claim a {
+  margin-top: 2rem;
+}
+
+.about {
+  padding: 6rem 0;
+}
+.about__wrapper {
+  gap: 3rem;
+}
+
+.about2 {
+  padding: 6rem 0;
+  background-color: #f9f9f9;
+}
+.about2__wrapper {
+  gap: 3rem;
+}
+
+.slider {
+  padding: 6rem 0;
+  text-align: center;
+}
+.slider hr {
+  width: 30%;
+  margin: 2rem auto;
+}
+.slider .tns-nav {
+  text-align: center;
+  margin: 5rem;
+}
+.slider .tns-nav button {
+  height: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 4px;
+}
+.slider .tns-nav .tns-nav-active {
+  background-color: #e85d64;
+}
+.slider .tns-controls {
+  position: relative;
+}
+.slider .tns-controls button:first-child {
+  position: absolute;
+  top: 10rem;
+  background: none;
+  border: none;
+  z-index: 1;
+  font-size: 2rem;
+}
+.slider .tns-controls button:last-child {
+  position: absolute;
+  right: 0;
+  top: 10rem;
+  background: none;
+  border: none;
+  z-index: 1;
+  font-size: 2rem;
+}
+.slider__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.question {
+  padding: 6rem 0;
+  margin-bottom: 3rem;
+  background-color: #FAF9F6;
+}
+.question h1 {
+  margin-bottom: 2rem;
+}
+.question p {
+  margin: 0 auto;
+}
+.question h3 {
+  color: #e85d64;
+}
+
+.maps {
+  padding: 6rem 0;
+  background-color: #202020;
+}
+.maps__wrapper {
+  gap: 3rem;
+}
+.maps hr {
+  border-top: 1px solid #e85d64;
+}
+.maps img {
+  width: 1200px;
+}
+.maps p {
+  color: #f2f2f2;
+}
+
+.footer {
+  padding: 6rem 0;
+  background-color: #e85d64;
+  color: #f2f2f2;
+  height: 8vh;
+}
+.footer__wrapper ul {
+  gap: 2rem;
+}
+.footer__wrapper a {
+  border-right: solid 2px #f2f2f2;
+  padding-right: 3rem;
+  color: #f2f2f2;
+  text-align: center;
 }
 
 .bg--primary {
@@ -39,12 +203,38 @@ a {
   color: #e85d64;
 }
 
+.btn.bg--primary {
+  padding: 0.5rem 3rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: inline-block;
+  border-radius: 5rem;
+  background: #e85d64;
+}
+.btn.bg--primary:hover {
+  background: #e23039;
+}
+
 .bg--gray {
   background-color: #3d4045;
 }
 
 .text--gray {
   color: #3d4045;
+}
+
+.btn.bg--gray {
+  padding: 0.5rem 3rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: inline-block;
+  border-radius: 5rem;
+  background: #3d4045;
+}
+.btn.bg--gray:hover {
+  background: #25272a;
 }
 
 .bg--black {
@@ -55,12 +245,38 @@ a {
   color: rgba(0, 0, 0, 0);
 }
 
+.btn.bg--black {
+  padding: 0.5rem 3rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: inline-block;
+  border-radius: 5rem;
+  background: rgba(0, 0, 0, 0);
+}
+.btn.bg--black:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
 .bg--white {
   background-color: #f2f2f2;
 }
 
 .text--white {
   color: #f2f2f2;
+}
+
+.btn.bg--white {
+  padding: 0.5rem 3rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: inline-block;
+  border-radius: 5rem;
+  background: #f2f2f2;
+}
+.btn.bg--white:hover {
+  background: #d9d9d9;
 }
 
 .text--center {
@@ -129,4 +345,44 @@ a {
 
 .align--end {
   align-items: flex-end;
+}
+
+.mb--1 {
+  margin-bottom: 1rem;
+}
+
+.mb--2 {
+  margin-bottom: 2rem;
+}
+
+.mb--3 {
+  margin-bottom: 3rem;
+}
+
+.mb--4 {
+  margin-bottom: 4rem;
+}
+
+.mb--5 {
+  margin-bottom: 5rem;
+}
+
+.mb--6 {
+  margin-bottom: 6rem;
+}
+
+.mb--7 {
+  margin-bottom: 7rem;
+}
+
+.mb--8 {
+  margin-bottom: 8rem;
+}
+
+.mb--9 {
+  margin-bottom: 9rem;
+}
+
+.mb--10 {
+  margin-bottom: 10rem;
 }/*# sourceMappingURL=main.min.css.map */

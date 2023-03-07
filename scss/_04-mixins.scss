@@ -19,3 +19,21 @@
         
     }
 }
+@mixin btn($bg) {
+    padding: 0.5rem 3rem;
+    color: $clr-white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    display: inline-block;
+    border-radius: 5rem;
+    background: $bg;
+    &:hover {
+      background: darken($bg, 10);
+    }
+  }
+  @mixin grid($cols: 1, $gap:1rem)
+  {
+    display: grid;
+    grid-template-columns:  repeat($cols,1fr);
+    grid-gap: $gap;
+  }
